@@ -4,13 +4,7 @@
 
 This is a **static website** project for **Gurukul Classes**, built to showcase information about the coaching/tuition center using a modern, responsive layout.
 
-## Tech Stack / Languages Used
 
-- **HTML** – structure of the pages
-- **CSS** – styling for layout and design
-- **Tailwind CSS** – utility-first CSS framework (built from `src/input.css` to `src/output.css`)
-- **JavaScript (Vanilla JS)** – basic interactivity (`src/index.js`)
-- **Node.js + npm** – used to install and run Tailwind CSS tooling
 
 ## Project Structure (Main Files)
 
@@ -56,12 +50,27 @@ Install the Tailwind CSS-related dependencies:
 npm install
 ```
 
-This reads `package.json` and installs:
 
-- `tailwindcss`
-- `@tailwindcss/cli`
 
-### 4. Build CSS with Tailwind
+
+
+### 4. Open the Website in Your Browser
+
+After building the CSS:
+
+- You can simply **open `index.html`** (or `src/index.html`, depending on how you want to serve it) in your browser by double‑clicking it, **or**
+- Use a simple live server (for example, VS Code extension “Live Server”) and start it in the project directory.
+
+### 5. Making Changes
+
+- Edit HTML in `index.html` / `src/index.html`
+- Edit styles in `src/input.css` (Tailwind classes)
+- Edit JS behavior in `src/index.js`
+
+If `--watch` is running, Tailwind will recompile your CSS automatically whenever you save changes.
+
+> optional
+### To Build CSS with Tailwind
 
 From the project root, run the Tailwind CLI to build your CSS (adjust input/output paths if you change them later):
 
@@ -74,22 +83,6 @@ This will:
 - Read from `src/input.css`
 - Generate compiled styles into `src/output.css`
 - Keep watching for changes while the command is running
-
-### 5. Open the Website in Your Browser
-
-After building the CSS:
-
-- You can simply **open `index.html`** (or `src/index.html`, depending on how you want to serve it) in your browser by double‑clicking it, **or**
-- Use a simple live server (for example, VS Code extension “Live Server”) and start it in the project directory.
-
-### 6. Making Changes
-
-- Edit HTML in `index.html` / `src/index.html`
-- Edit styles in `src/input.css` (Tailwind classes)
-- Edit JS behavior in `src/index.js`
-
-If `--watch` is running, Tailwind will recompile your CSS automatically whenever you save changes.
-
 ---
 
 Happy coding 👨‍💻 and welcome to Gurukul Classes!
